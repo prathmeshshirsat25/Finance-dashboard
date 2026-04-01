@@ -2,7 +2,7 @@
 
 A clean, interactive, and responsive finance dashboard built with **React** and **Vite**. This dashboard allows users to track their financial activity, visualize spending trends, and manage transactions with a role-based UI.
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
@@ -26,7 +26,7 @@ A clean, interactive, and responsive finance dashboard built with **React** and 
    npm run build
    ```
 
-## ✨ Key Features
+## Key Features
 
 ### 1. Dashboard Overview
 - **Summary Cards**: Real-time calculation of Total Balance, Income, and Expenses.
@@ -62,7 +62,7 @@ A clean, interactive, and responsive finance dashboard built with **React** and 
 - **Animations**: Framer Motion
 - **Styling**: Vanilla CSS (CSS Variables)
 
-## 📁 Project Structure
+##  Project Structure
 - `src/components`: Reusable UI components (Sidebar, Dashboard, TransactionList, Modal).
 - `src/store`: Application state and logic (Zustand).
 - `src/styles`: Global CSS and design tokens.
