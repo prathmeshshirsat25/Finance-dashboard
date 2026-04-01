@@ -1,0 +1,201 @@
+.insights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.insight-main-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  font-family: var(--font-display);
+}
+
+.card-header .badge {
+  background: var(--ring);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.chart-container {
+  overflow: hidden;
+}
+
+.insights-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.analysis-card {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  border-left: 4px solid var(--primary);
+}
+
+.analysis-card.warning {
+  border-left-color: var(--danger);
+}
+
+.analysis-card.success {
+  border-left-color: var(--success);
+}
+
+.analysis-card.warning .analysis-icon {
+  color: var(--danger);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.analysis-card.success .analysis-icon {
+  color: var(--success);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.analysis-icon {
+  padding: 0.75rem;
+  border-radius: 12px;
+}
+
+.analysis-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.analysis-content p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--bg-main);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: currentColor;
+  border-radius: 3px;
+}
+
+.action-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.action-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.action-header h4 {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.zap-icon {
+  color: var(--warning);
+}
+
+.action-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.action-list li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.action-list li span strong {
+  color: var(--text-main);
+}
+
+.goal-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.target-icon {
+  color: var(--primary);
+}
+
+.score-circle {
+  width: 120px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: var(--bg-main);
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease 0s;
+}
+
+.percentage {
+  fill: var(--text-main);
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+@media (max-width: 1100px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
